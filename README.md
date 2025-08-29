@@ -8,8 +8,7 @@ This model uses **XGBoost Classifier** to identify employees at risk of leaving 
 
 ---
 
-## Dataset
-- **Source:** [IBM HR Analytics Employee Attrition & Performance dataset](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset)  
+## Dataset 
 - **Number of records:** 1470  
 - **Features:** 35 (after cleaning: 32)  
 - **Target variable:** `Attrition` (Yes = 1, No = 0)  
@@ -90,26 +89,3 @@ Handle class imbalance: SMOTE, ADASYN, or class_weight='balanced'
 Adjust prediction threshold to improve recall
 
 Feature engineering to enhance predictive power
-
-Try ensemble models (Random Forest, LightGBM) for comparison
-
-How to Run
-Install dependencies:
-
-bash
-Copy code
-pip install pandas numpy matplotlib seaborn scikit-learn xgboost
-Load cleaned dataset:
-
-python
-Copy code
-import pandas as pd
-df = pd.read_csv('Cleaned_Data.csv')
-Run training and evaluation code provided in hr_attrition.ipynb
-
-File Structure
-bash
-Copy code
-├── Cleaned_Data.csv      # Preprocessed dataset
-├── hr_attrition.ipynb    # Notebook with full workflow
-├── README.md             # Project description
